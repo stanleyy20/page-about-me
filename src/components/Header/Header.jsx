@@ -9,7 +9,7 @@ const style = bemCssModules(HeaderStyle);
 
 const Header = () => {
   return (
-    <header className={style()}>
+    <header className={style()} id='header'>
       <NavMenu />
       <div className={style('back-color')}></div>
       <div className={style('back-img')}></div>

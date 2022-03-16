@@ -1,0 +1,25 @@
+.button {
+  position: fixed;
+  display: block;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  border: solid 1px #9da19d;
+  right: 2%;
+  bottom: 2%;
+  border-radius: 6px;
+  transition: 1.5s;
+
+  &--hide {
+    opacity: 0;
+  }
+
+  i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #9da19d;
+    font-size: 25px;
+  }
+}

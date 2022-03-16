@@ -6,6 +6,7 @@ import FollowMe from '../FollowMe/FollowMe';
 
 import Header from '../Header/Header';
 import MyProject from '../MyProjects/MyProject';
+import ScrollTopButton from '../ScrollTopButton/ScrollTopButton';
 
 // import { default as HeaderStyle } from './MainPage.module.scss';
 
@@ -19,6 +20,7 @@ const MainPage = () => {
       <AboutMe />
       <MyProject />
       <Contact />
+      <ScrollTopButton />
     </Fragment>
   );
 };
