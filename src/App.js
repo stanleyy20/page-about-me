@@ -1,15 +1,26 @@
 import React from 'react';
 
-import { HashRouter as Router } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-import TitlePage from './components/TitleSide/TitlePage';
+import bemCssModules from 'bem-css-modules';
+
+import TitlePage from './components/TitlePage/TitlePage';
 
 import './App.module.scss';
+import MainPage from './components/MainPage/MainPage';
+
+bemCssModules.setSettings({
+  modifierDelimiter: '--',
+});
 
 function App() {
   return (
     <Router>
-      <TitlePage />
+      <Routes>
+        <Route path='/' element={<TitlePage />} />
+        <Route path='/main' element={<MainPage />} />
+      </Routes>
     </Router>
   );
 }

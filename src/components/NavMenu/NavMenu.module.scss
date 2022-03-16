@@ -1,0 +1,26 @@
+.menu {
+  display: flex;
+  justify-content: flex-end;
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-top: 30px;
+    width: 50%;
+    justify-content: space-around;
+  }
+
+  &__link {
+    font-family: 'Ubuntu';
+    color: #9da19d;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 30px;
+    transition: 0.8s;
+
+    &:hover {
+      color: #ff3d4f;
+    }
+  }
+}
