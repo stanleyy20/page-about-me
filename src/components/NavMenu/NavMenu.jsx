@@ -16,7 +16,7 @@ const NavMenu = () => {
           </a>
         </li>
         <li li className={'item'}>
-          <a href='/' className={style('link')}>
+          <a href='#project' className={style('link')}>
             Projects
           </a>
         </li>

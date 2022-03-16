@@ -1,8 +1,5 @@
 import React from 'react';
 
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faFacebook } from '@fortawesome/free-regular-svg-icons';
-
 import bemCssModules from 'bem-css-modules';
 
 import { default as FollowMeStyle } from './FollowMe.module.scss';

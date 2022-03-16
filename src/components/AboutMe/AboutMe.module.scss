@@ -1,10 +1,6 @@
 .about-me {
   width: 100vw;
   height: 100vh;
-  background-color: #191a1c;
-  background-image: url('https://keira.inaikas.com/wp-content/themes/keira/images/line-maker.svg');
-  background-repeat: repeat;
-  background-position: center center;
 
   &__wrapper {
     display: flex;
@@ -13,6 +9,10 @@
     margin: 0 auto;
     justify-content: space-around;
     padding-top: 50px;
+
+    @media (max-width: 1000px) {
+      flex-wrap: wrap;
+    }
   }
 
   &__title {
@@ -42,12 +42,28 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @media (max-width: 1000px) {
+      width: 80%;
+    }
   }
 
   &__decription {
     width: 40%;
     height: 100%;
     margin-top: 40px;
+
+    @media (max-width: 1000px) {
+      width: 80%;
+    }
+    a {
+      text-decoration: none;
+      color: #ff3d4f;
+
+      &:hover {
+        border-bottom: #ff3d4f 1px solid;
+      }
+    }
 
     h3 {
       color: white;

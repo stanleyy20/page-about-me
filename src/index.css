@@ -9,6 +9,10 @@
 }
 
 body {
+  background-color: #191a1c;
+  background-image: url('https://keira.inaikas.com/wp-content/themes/keira/images/line-maker.svg');
+  background-repeat: repeat;
+  background-position: center center;
   overflow-x: hidden;
 }
 
