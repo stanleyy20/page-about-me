@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import bemCssModules from 'bem-css-modules';
 
@@ -7,8 +7,27 @@ import { default as NavStyle } from './NavMenu.module.scss';
 const style = bemCssModules(NavStyle);
 
 const NavMenu = () => {
+  const [isVisible, setIsVisible] = useState(true);
+
+  const listenToScroll = () => {
+    let heightToHideFrom = 10;
+
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+
+    if (winScroll > heightToHideFrom) {
+      isVisible && setIsVisible(false);
+    } else {
+      setIsVisible(true);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', listenToScroll);
+    return () => window.removeEventListener('scroll', listenToScroll);
+  }, []);
+
   return (
-    <nav className={style()}>
+    <nav className={style({ barmenu: !isVisible })}>
       <ul className={style('list')}>
         <li className={'item'}>
           <a href='#about' className={style('link')}>
@@ -26,7 +45,7 @@ const NavMenu = () => {
           </a>
         </li>
         <li li className={'item'}>
-          <a href='/' className={style('link')}>
+          <a href='#contact' className={style('link')}>
             Contact
           </a>
         </li>

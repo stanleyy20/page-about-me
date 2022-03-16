@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import AboutMe from '../AboutMe/AboutMe';
+import Contact from '../Contact/Contact';
 import FollowMe from '../FollowMe/FollowMe';
 // import bemCssModules from 'bem-css-modules';
 
@@ -17,6 +18,7 @@ const MainPage = () => {
       <Header />
       <AboutMe />
       <MyProject />
+      <Contact />
     </Fragment>
   );
 };

@@ -2,11 +2,20 @@
   display: flex;
   justify-content: flex-end;
 
+  &--barmenu {
+    background-color: #1d1e20;
+    position: fixed;
+    right: 0;
+    width: 100%;
+    z-index: 99999999;
+    padding-bottom: 20px;
+  }
+
   &__list {
     display: flex;
     flex-direction: row;
     list-style: none;
-    margin-top: 30px;
+    margin-top: 15px;
     width: 50%;
     justify-content: space-around;
   }
