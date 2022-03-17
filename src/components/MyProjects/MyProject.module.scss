@@ -1,8 +1,17 @@
+$hoverBreak: 1200px;
 .project {
   min-height: 100vh;
   width: 80%;
   margin: 0 auto;
   color: white;
+
+  p {
+    font-family: 'Ubuntu';
+  }
+
+  @media (max-width: $hoverBreak) {
+    font-size: 20px;
+  }
 
   &__title {
     display: inline-block;
@@ -33,6 +42,10 @@
     color: white;
     padding-top: 10px;
 
+    @media (max-width: $hoverBreak) {
+      font-size: 20px;
+    }
+
     &--botoom {
       text-align: center;
       font-size: 20px;
@@ -44,6 +57,15 @@
 
         &:hover {
           border-bottom: #ff3d4f 1px solid;
+        }
+        @media (max-width: $hoverBreak) {
+          &:hover a {
+            border-bottom: none;
+          }
+
+          &:hover {
+            border-bottom: none;
+          }
         }
 
         cursor: pointer;
@@ -78,40 +100,47 @@
       transition: 1s;
       box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.582);
 
-      @media (max-width: 1400px) {
-        flex-basis: 40%;
-      }
-
-      @media (max-width: 1000px) {
-        flex-basis: 60%;
-      }
-
-      @media (max-width: 900px) {
-        flex-basis: 90%;
+      @media (max-width: 1200px) {
+        flex-basis: 70%;
+        min-height: 80vh;
       }
 
       h3 {
         font-family: 'Ubuntu';
+
+        @media (max-width: $hoverBreak) {
+          font-size: 25px;
+        }
       }
 
       p {
         font-family: 'Ubuntu';
         padding-bottom: 30px;
+
+        @media (max-width: $hoverBreak) {
+          font-size: 22px;
+        }
       }
 
       &__container {
         position: relative;
         width: 100%;
-        height: 80%;
-        overflow: hidden;
+
         transition: 1s;
+        overflow: visible;
+        height: 75%;
 
-        &:hover &__link {
-          top: 85%;
-        }
+        @media (min-width: $hoverBreak) {
+          height: 80%;
+          overflow: hidden;
 
-        &:hover &__img {
-          filter: blur(2px);
+          &:hover &__link {
+            top: 85%;
+          }
+
+          &:hover &__img {
+            filter: blur(2px);
+          }
         }
 
         &__link {
@@ -130,7 +159,22 @@
           transition: 1s;
           z-index: 999;
 
-          &:hover {
+          @media (min-width: $hoverBreak) {
+            &:hover {
+              background-color: #ff3d4f;
+            }
+          }
+
+          @media (max-width: $hoverBreak) {
+            top: 126%;
+            background-color: #222222;
+            border: #ff3d4f 2px solid;
+            border-radius: 8px;
+            font-size: 22px;
+            transition: 0s;
+          }
+
+          &:active {
             background-color: #ff3d4f;
           }
         }

@@ -1,3 +1,6 @@
+$hoverBreak: 1200px;
+$hoverBreakMobile: 600px;
+
 .contact {
   min-height: 90vh;
   width: 80%;
@@ -30,8 +33,16 @@
     padding-top: 60px;
     width: 100%;
 
+    @media (max-width: $hoverBreak) {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
     &__form {
       flex-basis: 60%;
+
+      @media (max-width: $hoverBreak) {
+        flex-basis: 80%;
+      }
 
       &__text {
         margin-bottom: 5%;
@@ -61,6 +72,11 @@
         font-size: large;
         color: #9da19d;
         padding: 10px;
+
+        @media (max-width: $hoverBreak) {
+          margin-right: 10px;
+          width: calc((100% / 3) - 9px);
+        }
 
         &--last {
           margin-right: 0;
@@ -97,6 +113,8 @@
         width: 99%;
         resize: none;
         padding-top: 10px;
+        color: #9da19d;
+        font-size: 20px;
 
         &::placeholder {
           text-align: center;
@@ -118,6 +136,10 @@
       border: #303133 solid 2px;
       color: #9da19d;
       text-align: center;
+
+      @media (max-width: $hoverBreak) {
+        flex-basis: 80%;
+      }
 
       &__container {
         position: absolute;

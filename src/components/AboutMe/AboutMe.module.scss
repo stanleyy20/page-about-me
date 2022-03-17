@@ -1,3 +1,5 @@
+$hoverBreak: 1200px;
+
 .about-me {
   width: 100vw;
   min-height: 100vh;
@@ -43,6 +45,10 @@
     background-position: center;
     background-size: cover;
 
+    @media (max-width: $hoverBreak) {
+      height: 60vh;
+    }
+
     @media (max-width: 1000px) {
       width: 80%;
     }
@@ -78,6 +84,10 @@
     font-size: 18px;
     padding-bottom: 30px;
     margin-top: 20px;
+
+    @media (max-width: $hoverBreak) {
+      font-size: 20px;
+    }
   }
 
   &__skills {
