@@ -27,16 +27,26 @@ const Contact = () => {
               <p>Rzeszów</p>
             </div>
           </div>
-          <form className={style('wrapper__form')} action='send'>
+          <form
+            className={style('wrapper__form')}
+            action='https://formsubmit.co/fede92a60dc3245cd5df6610d5d08563'
+            method='POST'>
             <div className={style('wrapper__form__text')}>
               <h2>Any questions?</h2>
               <p>You can contact me through a contact form or write an email directly to me</p>
             </div>
-            <input className={style('wrapper__form__input')} type='text' placeholder='Name' />
-            <input className={style('wrapper__form__input')} type='text' placeholder='E-mail' />
-            <input className={style('wrapper__form__input', { last: true })} type='text' placeholder='Phone' />
+            <input className={style('wrapper__form__input')} type='text' name='Name' placeholder='Name' />
+            <input className={style('wrapper__form__input')} type='email' name='Emial' placeholder='E-mail' />
+            <input
+              className={style('wrapper__form__input', { last: true })}
+              type='text'
+              name='Phone'
+              placeholder='Phone'
+            />
             <textarea name='Message' cols='30' rows='10' placeholder='Message'></textarea>
-            <input className={style('wrapper__form__input', { button: true })} type='submit' value='Send Massege' />
+            <button className={style('wrapper__form__input', { button: true })} type='submit'>
+              Send Massege{' '}
+            </button>
           </form>
         </div>
       </section>

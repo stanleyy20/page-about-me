@@ -39,6 +39,12 @@
     overflow: hidden;
     transition: 1s;
     background-color: transparent;
+    transition: 1s;
+
+    &--hide {
+      opacity: 0;
+      top: 50%;
+    }
 
     span {
       display: block;

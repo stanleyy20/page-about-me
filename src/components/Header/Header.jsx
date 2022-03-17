@@ -3,6 +3,7 @@ import React from 'react';
 import bemCssModules from 'bem-css-modules';
 import NavMenu from '../NavMenu/NavMenu';
 
+
 import { default as HeaderStyle } from './Header.module.scss';
 
 const style = bemCssModules(HeaderStyle);

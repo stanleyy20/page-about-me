@@ -27,23 +27,34 @@ const AboutMe = () => {
           <h3>Skills</h3>
           <div className={style('skills')}>
             <div className={style('skills__element')}>
-              {' '}
-              <p> JavaScript</p>
+              <p>
+                JavaScript <i class='fa-brands fa-js-square'></i>
+              </p>
             </div>
             <div className={style('skills__element')}>
-              <p>React</p>
+              <p>
+                React <i class='fa-brands fa-react'></i>
+              </p>
             </div>
             <div className={style('skills__element')}>
-              <p>HTML</p>
+              <p>
+                HTML <i class='fa fa-html5' aria-hidden='true'></i>
+              </p>
             </div>
             <div className={style('skills__element')}>
-              <p>CSS</p>
+              <p>
+                CSS <i class='fa-brands fa-css3-alt'></i>
+              </p>
+            </div>
+            <div className={style('skills__element', { last: true })}>
+              <p>
+                SASS <i class='fa-brands fa-sass'></i>
+              </p>
             </div>
             <div className={style('skills__element')}>
-              <p>SASS</p>
-            </div>
-            <div className={style('skills__element')}>
-              <p>BEM</p>
+              <p>
+                Git <i class='fa-solid fa-code-branch'></i>
+              </p>
             </div>
           </div>
         </div>
