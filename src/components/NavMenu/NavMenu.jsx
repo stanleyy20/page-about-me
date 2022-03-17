@@ -6,7 +6,7 @@ import { default as NavStyle } from './NavMenu.module.scss';
 
 const style = bemCssModules(NavStyle);
 
-const NavMenu = () => {
+const NavMenu = ({ isVisibleMenu, setIsVisibleMenu }) => {
   const [isVisible, setIsVisible] = useState(true);
 
   const listenToScroll = () => {
@@ -27,8 +27,15 @@ const NavMenu = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  const onClick = () => {
+    setIsVisibleMenu(!isVisibleMenu);
+  };
+
   return (
     <nav className={style({ barmenu: !isVisible })}>
+      <div className={style('bars-mobile')}>
+        <i onClick={onClick} class='fa-solid fa-bars'></i>
+      </div>
       <ul className={style('list')}>
         <li className={'item'}>
           <a href='#about' className={style('link')}>

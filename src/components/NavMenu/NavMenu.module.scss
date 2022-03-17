@@ -1,4 +1,5 @@
 $hoverBreak: 1200px;
+$hoverBreakMobile: 600px;
 
 .menu {
   display: flex;
@@ -20,8 +21,26 @@ $hoverBreak: 1200px;
     margin-top: 15px;
     width: 50%;
     justify-content: space-around;
+
     @media (max-width: $hoverBreak) {
       width: 100%;
+    }
+
+    @media (max-width: $hoverBreakMobile) {
+      display: none;
+    }
+  }
+
+  &__bars-mobile {
+    z-index: 99999999;
+    @media (min-width: $hoverBreakMobile) {
+      display: none;
+    }
+    i {
+      color: white;
+      font-size: 40px;
+      padding-right: 20px;
+      padding-top: 20px;
     }
   }
 

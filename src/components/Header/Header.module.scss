@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Oswald:wght@700&family=Ubuntu&display=swap');
 $hoverBreak: 1200px;
+$hoverBreakMobile: 600px;
+
 .header {
   position: relative;
   height: 100vh;
@@ -12,6 +14,10 @@ $hoverBreak: 1200px;
     top: 0;
     background: linear-gradient(90deg, #191a1c, #191a1c);
     z-index: -1;
+
+    @media (max-width: $hoverBreakMobile) {
+      display: none;
+    }
   }
 
   &__back-img {
@@ -23,6 +29,11 @@ $hoverBreak: 1200px;
     background-image: url('../../../public/baner.png');
     background-size: cover;
     z-index: -1;
+
+    @media (max-width: $hoverBreakMobile) {
+      width: 100%;
+      background-position: center;
+    }
   }
 
   &__wrapper {
@@ -31,15 +42,16 @@ $hoverBreak: 1200px;
     left: 10%;
     transform: translateY(-50%);
 
+    @media (max-width: $hoverBreakMobile) {
+      left: 5%;
+    }
+
     &__title {
       color: #9da19d;
       font-family: 'Ubuntu';
       font-size: 70px;
       font-weight: 100;
       margin-top: 10px;
-
-      @media (max-width: $hoverBreak) {
-      }
     }
 
     &__text {

@@ -3,15 +3,14 @@ import React from 'react';
 import bemCssModules from 'bem-css-modules';
 import NavMenu from '../NavMenu/NavMenu';
 
-
 import { default as HeaderStyle } from './Header.module.scss';
 
 const style = bemCssModules(HeaderStyle);
 
-const Header = () => {
+const Header = ({ isVisible, setIsVisible }) => {
   return (
     <header className={style()} id='header'>
-      <NavMenu />
+      <NavMenu isVisibleMenu={isVisible} setIsVisibleMenu={setIsVisible} />
       <div className={style('back-color')}></div>
       <div className={style('back-img')}></div>
       <div className={style('wrapper')}>

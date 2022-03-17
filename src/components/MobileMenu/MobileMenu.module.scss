@@ -1,0 +1,33 @@
+.mobile-menu {
+  position: fixed;
+  left: 0;
+  top: -50%;
+  width: 100vw;
+  height: 45vh;
+  background-color: #1d1e20;
+  z-index: 999999;
+  text-align: center;
+  border-bottom: #303133 solid 2px;
+  transition: 0.5s;
+
+  &--hide {
+    top: 0;
+  }
+
+  &__list {
+    margin-top: 80px;
+  }
+
+  &__item {
+    margin-bottom: 30px;
+  }
+
+  &__link {
+    font-family: 'Ubuntu';
+    color: #9da19d;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 30px;
+    transition: 0.8s;
+  }
+}
