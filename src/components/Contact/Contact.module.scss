@@ -34,7 +34,7 @@ $hoverBreakMobile: 600px;
   &__wrapper {
     display: flex;
     justify-content: space-between;
-    padding-top: 60px;
+    padding-top: 30px;
     width: 100%;
 
     @media (max-width: $hoverBreak) {
@@ -70,6 +70,10 @@ $hoverBreakMobile: 600px;
           margin-bottom: 20px;
           font-size: 40px;
           font-family: 'Ubuntu';
+
+          @media (max-width: $hoverBreak) {
+            margin-top: 25px;
+          }
 
           @media (max-width: $hoverBreakMobile) {
             font-size: 30px;
@@ -148,7 +152,7 @@ $hoverBreakMobile: 600px;
         border: #303133 solid 2px;
         width: 99%;
         resize: none;
-        padding-top: 10px;
+        padding: 10px;
         color: #9da19d;
         font-size: 20px;
 
@@ -194,6 +198,14 @@ $hoverBreakMobile: 600px;
         p {
           font-family: 'Ubuntu';
           font-size: 18px;
+
+          @media (max-width: $hoverBreak) {
+            font-size: 23px;
+          }
+
+          @media (max-width: $hoverBreakMobile) {
+            font-size: 18px;
+          }
         }
 
         h4 {
@@ -201,6 +213,14 @@ $hoverBreakMobile: 600px;
           padding: 20px 0;
           font-family: 'Ubuntu';
           color: white;
+
+          @media (max-width: $hoverBreak) {
+            font-size: 28px;
+          }
+
+          @media (max-width: $hoverBreakMobile) {
+            font-size: 22px;
+          }
         }
       }
     }

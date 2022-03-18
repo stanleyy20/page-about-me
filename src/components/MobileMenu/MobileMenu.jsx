@@ -8,11 +8,11 @@ const style = bemCssModules(NavStyle);
 
 const MobileMenu = ({ isVisible, setIsVisible }) => {
   const onClick = () => {
-    setIsVisible(true);
+    setIsVisible(false);
   };
 
   return (
-    <div className={style({ hide: !isVisible })}>
+    <div className={style({ hide: isVisible })}>
       <ul className={style('list')}>
         <li className={style('item')}>
           <a onClick={onClick} href='#about' className={style('link')}>

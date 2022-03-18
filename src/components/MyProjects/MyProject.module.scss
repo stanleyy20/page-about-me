@@ -9,6 +9,7 @@ $hoverBreakMobile: 600px;
 
   p {
     font-family: 'Ubuntu';
+    font-size: 20px;
   }
 
   @media (max-width: $hoverBreak) {
@@ -41,7 +42,8 @@ $hoverBreakMobile: 600px;
 
   &__title-h3 {
     color: white;
-    padding-top: 10px;
+    padding-top: 25px;
+    text-align: center;
   }
 
   &__text {
@@ -89,31 +91,28 @@ $hoverBreakMobile: 600px;
     margin-top: 30px;
     display: flex;
     justify-content: space-around;
-
-    @media (max-width: 1400px) {
-      flex-wrap: wrap;
-    }
+    flex-wrap: wrap;
 
     &__element {
       margin-bottom: 35px;
       padding: 30px;
-      height: 60vh;
+      height: 30vh;
       overflow: hidden;
-      flex-basis: 28%;
+      flex-basis: 26%;
       transition: 1s;
       border-radius: 4px;
-      background-color: #222222;
       transition: 1s;
-      box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.582);
+      background-color: transparent;
+      border: #303133 solid 2px;
 
-      @media (max-width: 1200px) {
-        flex-basis: 70%;
-        min-height: 80vh;
+      @media (max-width: $hoverBreak) {
+        flex-basis: 40%;
+        min-height: 30vh;
       }
 
       @media (max-width: $hoverBreakMobile) {
-        flex-basis: 100%;
-        min-height: 70vh;
+        flex-basis: 80%;
+        min-height: 40vh;
       }
 
       h3 {
@@ -130,7 +129,7 @@ $hoverBreakMobile: 600px;
 
       p {
         font-family: 'Ubuntu';
-        padding-bottom: 30px;
+        padding-bottom: 20px;
 
         @media (max-width: $hoverBreak) {
           font-size: 22px;
@@ -144,63 +143,31 @@ $hoverBreakMobile: 600px;
       &__container {
         position: relative;
         width: 100%;
-
         transition: 1s;
-        overflow: visible;
-        height: 75%;
-
-        @media (min-width: $hoverBreak) {
-          height: 80%;
-          overflow: hidden;
-
-          &:hover &__link {
-            top: 85%;
-          }
-
-          &:hover &__img {
-            filter: blur(2px);
-          }
-        }
-
-        @media (max-width: $hoverBreakMobile) {
-          height: 75%;
-        }
+        height: 45%;
 
         &__link {
           position: absolute;
           left: 50%;
-          top: 110%;
+          top: 175%;
           transform: translateX(-50%);
           text-decoration: none;
-          color: #9da19d;
+          color: white;
           background-color: #222222;
+          border: #303133 solid 2px;
           padding: 10px 25px;
           border-radius: 4px;
           font-family: 'Ubuntu';
           letter-spacing: 1px;
-          font-weight: 600;
-          transition: 1s;
+          font-weight: 700;
           z-index: 999;
+          font-size: 18px;
 
           @media (min-width: $hoverBreak) {
+            transition: 1s;
             &:hover {
               background-color: #ff3d4f;
             }
-          }
-
-          @media (max-width: $hoverBreak) {
-            top: 126%;
-            background-color: #222222;
-            border: #ff3d4f 2px solid;
-            border-radius: 8px;
-            font-size: 22px;
-            transition: 0s;
-          }
-
-          @media (max-width: $hoverBreakMobile) {
-            top: 128%;
-            font-size: 15px;
-            border: #ff3d4f 1px solid;
           }
 
           &:active {
@@ -209,26 +176,9 @@ $hoverBreakMobile: 600px;
         }
 
         &__img {
-          margin: 0 auto;
-          height: 100%;
-          background-size: cover;
-          background-repeat: no-repeat;
-          transition: 0.5s;
-          cursor: pointer;
-
-          &--bg-one {
-            background-image: url('../../../public/weather\ app.jpg');
-            background-position: center;
-          }
-
-          &--bg-two {
-            background-image: url('../../../public/repo-search.jpg');
-            background-position: center;
-          }
-
-          &--bg-three {
-            background-image: url('../../../public/miniswapper.jpg');
-            background-position: center;
+          text-align: center;
+          i {
+            font-size: 100px;
           }
         }
       }

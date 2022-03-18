@@ -51,7 +51,7 @@ const Contact = () => {
         </div>
       </section>
       <footer>
-        <p>© Copyrights Inaikas 2022. All Rights Reserved.</p>
+        <p>© Copyrights 2022. All Rights Reserved.</p>
       </footer>
     </>
   );
