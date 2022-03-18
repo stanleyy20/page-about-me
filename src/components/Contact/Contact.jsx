@@ -39,7 +39,7 @@ const Contact = () => {
             <input className={style('wrapper__form__input')} type='email' name='Emial' placeholder='E-mail' />
             <input
               className={style('wrapper__form__input', { last: true })}
-              type='text'
+              type='number'
               name='Phone'
               placeholder='Phone'
             />
