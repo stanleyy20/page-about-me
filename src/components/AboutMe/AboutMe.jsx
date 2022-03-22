@@ -9,22 +9,23 @@ const style = bemCssModules(AboutMeStyle);
 const AboutMe = () => {
   return (
     <section className={style()} id='about'>
-      <h2 className={style('title')}>
+      <h2 className={style('title-h2')}>
         About Me <span></span>
       </h2>
       <div className={style('wrapper')}>
         <div className={style('image')}></div>
         <div className={style('decription')}>
-          <h3>Hello my name is Dawid</h3>
+          <h3 className={style('title-h3')}>Hello my name is Dawid</h3>
           <p className={style('text-area')}>
-            I like JavaScript and CSS. <br />
+            Enthusiastic junior JavaScript developer, trying to begin developing websites. <br />
             <br />
-            Started learing frontend development: 12 months ago. I'm trying to commit daily to my{' '}
-            <a href='https://github.com/stanleyy20'>GitHub</a> in order to recieve the best results. <br />
+            I have been learning how to code, develop since January 2021 and im still triyng to improve my skills. My
+            main point now is to become a frontend developer and gain some experience in international environment. I'm
+            focusing on JavaScript, CSS, React. <br />
             <br />
-            Currently I am focusing on improving my skills in the React library
+            In my free time I like to play football so i know how to colaborate, i'm a good teamplayer.
           </p>
-          <h3>Skills</h3>
+          <h3 className={style('title-h3')}>Skills</h3>
           <div className={style('skills')}>
             <div className={style('skills__element')}>
               <p>

@@ -6,7 +6,7 @@ $hoverBreakMobile: 600px;
   position: relative;
   height: 100vh;
 
-  &__back-color {
+  &__background-color {
     position: absolute;
     width: 40%;
     height: 100vh;
@@ -20,7 +20,7 @@ $hoverBreakMobile: 600px;
     }
   }
 
-  &__back-img {
+  &__background-img {
     position: absolute;
     top: 0;
     width: 60%;
@@ -45,45 +45,45 @@ $hoverBreakMobile: 600px;
     @media (max-width: $hoverBreakMobile) {
       left: 5%;
     }
+  }
 
-    &__title {
-      color: #9da19d;
-      font-family: 'Ubuntu';
-      font-size: 70px;
-      font-weight: 100;
-      margin-top: 10px;
+  &__title-h2 {
+    color: #9da19d;
+    font-family: 'Ubuntu';
+    font-size: 70px;
+    font-weight: 100;
+    margin-top: 10px;
+  }
+
+  &__title-h3 {
+    color: #9da19d;
+    font-family: 'Ubuntu';
+    font-size: 30px;
+    font-weight: 100;
+  }
+
+  &__info {
+    margin-top: 30px;
+    padding-left: 20px;
+    border-left: solid 4px #303133;
+    @media (max-width: $hoverBreak) {
+      font-size: 25px;
     }
+  }
 
-    &__text {
-      color: #9da19d;
+  &__text {
+    margin-bottom: 10px;
+    color: #9da19d;
+    font-family: 'Ubuntu';
+
+    &--lighter {
+      margin-left: 10px;
+      margin-bottom: 10px;
+      color: white;
       font-family: 'Ubuntu';
-      font-size: 30px;
-      font-weight: 100;
-    }
-
-    &__info {
-      margin-top: 30px;
-      padding-left: 20px;
-      border-left: solid 4px #303133;
+      font-size: 18px;
       @media (max-width: $hoverBreak) {
         font-size: 25px;
-      }
-
-      p {
-        margin-bottom: 10px;
-        color: #9da19d;
-        font-family: 'Ubuntu';
-      }
-
-      p:last-child {
-        margin-left: 10px;
-        margin-bottom: 10px;
-        color: white;
-        font-family: 'Ubuntu';
-        font-size: 18px;
-        @media (max-width: $hoverBreak) {
-          font-size: 25px;
-        }
       }
     }
   }

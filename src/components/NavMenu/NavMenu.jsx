@@ -33,6 +33,9 @@ const NavMenu = ({ isVisibleMenu, setIsVisibleMenu }) => {
 
   return (
     <nav className={style({ barmenu: !isVisible })}>
+      <p className={style('logo')}>
+        stanley<span>_20</span>
+      </p>
       <div className={style('bars-mobile')}>
         <i onClick={onClick} class='fa-solid fa-bars'></i>
       </div>
@@ -42,17 +45,17 @@ const NavMenu = ({ isVisibleMenu, setIsVisibleMenu }) => {
             About
           </a>
         </li>
-        <li li className={'item'}>
+        <li className={'item'}>
           <a href='#project' className={style('link')}>
             Projects
           </a>
         </li>
-        <li li className={'item'}>
+        <li className={'item'}>
           <a href='https://github.com/stanleyy20' className={style('link')}>
             GitHub
           </a>
         </li>
-        <li li className={'item'}>
+        <li className={'item'}>
           <a href='#contact' className={style('link')}>
             Contact
           </a>

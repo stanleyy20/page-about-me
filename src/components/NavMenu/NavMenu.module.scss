@@ -2,6 +2,7 @@ $hoverBreak: 1200px;
 $hoverBreakMobile: 600px;
 
 .menu {
+  position: relative;
   display: flex;
   justify-content: flex-end;
 
@@ -12,6 +13,26 @@ $hoverBreakMobile: 600px;
     width: 100%;
     z-index: 99999999;
     padding-bottom: 20px;
+    border-bottom: #303133 solid 2px;
+  }
+
+  &__logo {
+    position: absolute;
+    left: 11%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Ubuntu';
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+
+    @media (max-width: $hoverBreak) {
+      display: none;
+    }
+
+    span {
+      color: #ff3d4f;
+    }
   }
 
   &__list {
@@ -42,10 +63,10 @@ $hoverBreakMobile: 600px;
       padding-right: 20px;
       padding-top: 20px;
 
-      &:active{
+      &:active {
         &:active {
-      color: #ff3d4f;
-    }
+          color: #ff3d4f;
+        }
       }
     }
   }

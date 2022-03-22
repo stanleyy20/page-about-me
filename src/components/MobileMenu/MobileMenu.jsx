@@ -19,17 +19,17 @@ const MobileMenu = ({ isVisible, setIsVisible }) => {
             About
           </a>
         </li>
-        <li li className={style('item')}>
+        <li className={style('item')}>
           <a onClick={onClick} href='#project' className={style('link')}>
             Projects
           </a>
         </li>
-        <li li className={style('item')}>
+        <li className={style('item')}>
           <a onClick={onClick} href='https://github.com/stanleyy20' className={style('link')}>
             GitHub
           </a>
         </li>
-        <li li className={style('item')}>
+        <li className={style('item')}>
           <a onClick={onClick} href='#contact' className={style('link')}>
             Contact
           </a>

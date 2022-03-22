@@ -11,14 +11,14 @@ $hoverBreakMobile: 600px;
     height: 80%;
     margin: 0 auto;
     justify-content: space-around;
-    padding-top: 40px;
+    padding-top: 10px;
 
     @media (max-width: $hoverBreak) {
       flex-wrap: wrap;
     }
   }
 
-  &__title {
+  &__title-h2 {
     display: inline-block;
     position: relative;
     margin-left: 10%;
@@ -40,7 +40,7 @@ $hoverBreakMobile: 600px;
 
   &__image {
     width: 35%;
-    height: 65vh;
+    height: 70vh;
     background-image: url('../../../public/me.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -71,24 +71,15 @@ $hoverBreakMobile: 600px;
     @media (max-width: $hoverBreakMobile) {
       width: 90vh;
     }
+  }
 
-    a {
-      text-decoration: none;
-      color: #ff3d4f;
+  &__title-h3 {
+    color: white;
+    font-family: 'Ubuntu';
+    font-size: 40px;
 
-      &:hover {
-        border-bottom: #ff3d4f 1px solid;
-      }
-    }
-
-    h3 {
-      color: white;
-      font-family: 'Ubuntu';
-      font-size: 40px;
-
-      @media (max-width: $hoverBreakMobile) {
-        font-size: 30px;
-      }
+    @media (max-width: $hoverBreakMobile) {
+      font-size: 30px;
     }
   }
 
