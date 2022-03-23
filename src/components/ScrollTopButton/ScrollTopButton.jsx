@@ -21,6 +21,11 @@ const ScrollTopButton = () => {
     }
   };
 
+  const scrollTop = () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  };
+
   useEffect(() => {
     window.addEventListener('scroll', listenToScroll);
     return () => window.removeEventListener('scroll', listenToScroll);
@@ -28,9 +33,9 @@ const ScrollTopButton = () => {
   }, []);
 
   return (
-    <a className={style({ hide: isVisible })} href='#header'>
+    <button className={style({ hide: isVisible })} onClick={scrollTop}>
       <i class='fa fa-arrow-up'></i>
-    </a>
+    </button>
   );
 };
 

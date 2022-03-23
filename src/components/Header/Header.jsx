@@ -9,7 +9,7 @@ const style = bemCssModules(HeaderStyle);
 
 const Header = ({ isVisible, setIsVisible }) => {
   return (
-    <header className={style()} id='header'>
+    <header className={style()}>
       <NavMenu isVisibleMenu={isVisible} setIsVisibleMenu={setIsVisible} />
       <div className={style('background-color')}></div>
       <div className={style('background-img')}></div>

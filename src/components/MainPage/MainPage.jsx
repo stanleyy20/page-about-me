@@ -8,8 +8,24 @@ import MobileMenu from '../MobileMenu/MobileMenu';
 import MyProject from '../MyProjects/MyProject';
 import ScrollTopButton from '../ScrollTopButton/ScrollTopButton';
 
+// import scrollreveal from 'scrollreveal';
+
 const MainPage = () => {
   const [isVisible, setIsVisible] = useState(false);
+
+  // useEffect(() => {
+  //   const scroll = scrollreveal({
+  //     duration: 2000,
+  //     reset: true,
+  //   });
+  //   scroll.reveal(
+  //     `
+  //     #header,
+  //     #about,
+  //     #project
+  //     `
+  //   );
+  // }, []);
 
   return (
     <Fragment>

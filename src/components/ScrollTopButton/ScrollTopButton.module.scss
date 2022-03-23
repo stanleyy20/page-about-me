@@ -11,6 +11,7 @@ $hoverBreakMobile: 600px;
   bottom: 2%;
   border-radius: 6px;
   transition: 1.5s;
+  background-color: transparent;
 
   @media (max-width: $hoverBreakMobile) {
     width: 25px;
