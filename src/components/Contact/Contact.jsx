@@ -30,9 +30,11 @@ const Contact = () => {
               <h3 className={style('title-h3')}>Any questions?</h3>
               <p>You can contact me through a contact form or write an email directly to me</p>
             </div>
-            <input className={style('input')} type='text' name='Name' placeholder='Name' />
-            <input className={style('input')} type='email' name='Emial' placeholder='E-mail' />
-            <input className={style('input', { last: true })} type='number' name='Phone' placeholder='Phone' />
+            <div className={style('wrapper-input')}>
+              <input className={style('input')} type='text' name='Name' placeholder='Name' />
+              <input className={style('input')} type='email' name='Emial' placeholder='E-mail' />
+              <input className={style('input', { last: true })} type='number' name='Phone' placeholder='Phone' />
+            </div>
             <textarea className={style('textarea')} name='Message' cols='30' rows='10' placeholder='Message'></textarea>
             <button className={style('input', { button: true })} type='submit'>
               Send Massege{' '}
