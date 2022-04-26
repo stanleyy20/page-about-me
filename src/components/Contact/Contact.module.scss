@@ -94,7 +94,10 @@ $hoverBreakMobile: 600px;
     display: flex;
     width: 100%;
     justify-content: space-between;
-    
+
+    @media (max-width: $hoverBreakMobile) {
+      flex-wrap: wrap;
+    }
   }
 
   
