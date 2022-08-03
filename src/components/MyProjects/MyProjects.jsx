@@ -3,7 +3,20 @@ import React from 'react';
 import bemCssModules from 'bem-css-modules';
 
 import { default as ProjectStyle } from './MyProjects.module.scss';
-import { Project } from './Project/Project';
+import { Project } from '../ProjectItem/Project';
+
+import { PROJECTS } from '../../helpers/projectsData';
+
+const {
+    CALCULATOR,
+    GAME_SAPER,
+    REPO_SEARCH,
+    TO_DO_APP,
+    WEATHER,
+    BOOKS,
+    ROCK_PAPER_SCISSORS,
+    TRANSLATOR,
+} = PROJECTS;
 
 const style = bemCssModules(ProjectStyle);
 
@@ -15,36 +28,18 @@ const MyProjects = () => {
             </h2>
             <p className={style('text')}>Here you will find a list of my sample projects</p>
             <div className={style('wrapper')}>
+                <Project Url={BOOKS.URL} Icon={BOOKS.ICON} Title={BOOKS.TITLE} />
+                <Project Url={TRANSLATOR.URL} Icon={TRANSLATOR.ICON} Title={TRANSLATOR.TITLE} />
                 <Project
-                    projectUrl='https://stanleyy20.github.io/weather-app/'
-                    projectIcon={<i class='fa-solid fa-cloud-sun'></i>}
-                    projectName='Weather App '
+                    Url={ROCK_PAPER_SCISSORS.URL}
+                    Icon={ROCK_PAPER_SCISSORS.ICON}
+                    Title={ROCK_PAPER_SCISSORS.TITLE}
                 />
-                <Project
-                    projectUrl='https://stanleyy20.github.io/repository-search-github/'
-                    projectIcon={<i class='fa-solid fa-magnifying-glass'></i>}
-                    projectName='Repository search '
-                />
-                <Project
-                    projectUrl='https://stanleyy20.github.io/to-do-app/'
-                    projectIcon={<i class='fa-solid fa-calendar-check'></i>}
-                    projectName='To do App '
-                />
-                <Project
-                    projectUrl='https://stanleyy20.github.io/calculator-like-in-windows/'
-                    projectIcon={<i class='fa-solid fa-calculator'></i>}
-                    projectName='Calculator '
-                />
-                <Project
-                    projectUrl='https://stanleyy20.github.io/game-saper/'
-                    projectIcon={<i class='fa-solid fa-chess-board'></i>}
-                    projectName='Game Saper '
-                />
-                <Project
-                    projectUrl='https://stanleyy20.github.io/game-black-jack/'
-                    projectIcon={<i class='fa-solid fa-diamond'></i>}
-                    projectName='Game Black Jack '
-                />
+                <Project Url={WEATHER.URL} Icon={WEATHER.ICON} Title={WEATHER.TITLE} />
+                <Project Url={REPO_SEARCH.URL} Icon={REPO_SEARCH.ICON} Title={REPO_SEARCH.TITLE} />
+                <Project Url={TO_DO_APP.URL} Icon={TO_DO_APP.ICON} Title={TO_DO_APP.TITLE} />
+                <Project Url={CALCULATOR.URL} Icon={CALCULATOR.ICON} Title={CALCULATOR.TITLE} />
+                <Project Url={GAME_SAPER.URL} Icon={GAME_SAPER.ICON} Title={GAME_SAPER.TITLE} />
             </div>
             <p className={style('text', { botoom: true })}>
                 You can find all my projects on{' '}

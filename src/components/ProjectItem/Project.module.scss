@@ -7,7 +7,7 @@ $hoverBreakMobile: 600px;
     padding: 30px;
     min-height: 30vh;
     max-height: 40vh;
-    flex-basis: 26%;
+    flex-basis: 23%;
     transition: 1s;
     border-radius: 4px;
     transition: 1s;
@@ -34,10 +34,6 @@ $hoverBreakMobile: 600px;
         margin-top: 20px;
 
         @media (max-width: $hoverBreak) {
-            font-size: 25px;
-        }
-
-        @media (max-width: $hoverBreakMobile) {
             font-size: 20px;
         }
     }
