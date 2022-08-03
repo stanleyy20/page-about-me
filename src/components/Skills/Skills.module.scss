@@ -1,0 +1,31 @@
+$hoverBreak: 1200px;
+$hoverBreakMobile: 600px;
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+    height: 25%;
+    color: white;
+    border-radius: 4px;
+    background-color: transparent;
+    border: #303133 solid 2px;
+    text-align: center;
+    margin-top: 30px;
+
+    @media (max-width: $hoverBreakMobile) {
+        flex-basis: 90%;
+    }
+
+    p {
+        font-family: 'Ubuntu';
+        font-size: 25px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    i {
+        color: #ff3d4f;
+        padding-left: 10px;
+    }
+}
