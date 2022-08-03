@@ -1,8 +1,8 @@
 import bemCssModules from 'bem-css-modules';
 
-import { default as AboutMeStyle } from './Skills.module.scss';
+import { default as SkillStyle } from './Skill.module.scss';
 
-const style = bemCssModules(AboutMeStyle);
+const style = bemCssModules(SkillStyle);
 
 const Skills = ({ title, icon }) => {
     return (

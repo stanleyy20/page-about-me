@@ -26,6 +26,26 @@ export const SKILLS = {
     },
     TYPE_SCRIPT: {
         TITLE: 'TypeScript',
-        ICON: '',
+        ICON: 'fa-brands fa-bootstrap',
+    },
+    BOOTSTRAP: {
+        TITLE: 'Bootstrap',
+        ICON: 'fa-brands fa-bootstrap',
+    },
+    STYLED_COMPONENTS: {
+        TITLE: 'styled-components',
+        ICON: 'fa-brands fa-bootstrap',
+    },
+    WEBPACK: {
+        TITLE: 'Webpack',
+        ICON: 'fa-brands fa-bootstrap',
+    },
+    VITE: {
+        TITLE: 'Vite',
+        ICON: 'fa-brands fa-bootstrap',
+    },
+    REDUX: {
+        TITLE: 'Redux',
+        ICON: 'fa-brands fa-bootstrap',
     },
 };

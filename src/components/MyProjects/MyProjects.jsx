@@ -5,7 +5,7 @@ import bemCssModules from 'bem-css-modules';
 import { default as ProjectStyle } from './MyProjects.module.scss';
 import { Project } from '../ProjectItem/Project';
 
-import { PROJECTS } from '../../helpers/projectsData';
+import { PROJECTS } from '../../helpers/projectsText';
 
 const {
     CALCULATOR,
@@ -16,6 +16,7 @@ const {
     BOOKS,
     ROCK_PAPER_SCISSORS,
     TRANSLATOR,
+    GIT_HUB,
 } = PROJECTS;
 
 const style = bemCssModules(ProjectStyle);
@@ -44,8 +45,10 @@ const MyProjects = () => {
             <p className={style('text', { botoom: true })}>
                 You can find all my projects on{' '}
                 <span>
-                    <a href='https://github.com/stanleyy20'> GitHub </a>{' '}
-                    <i class='fa fa-github'></i>
+                    <a href={GIT_HUB.URL} target='_blank' rel='noopener noreferrer'>
+                        {GIT_HUB.TITLE}
+                    </a>{' '}
+                    <i class={GIT_HUB.ICON}></i>
                 </span>
             </p>
         </section>

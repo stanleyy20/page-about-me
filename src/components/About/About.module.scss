@@ -1,0 +1,38 @@
+$hoverBreak: 1450px;
+$hoverBreakMobile: 600px;
+
+.about-me {
+    width: 100vw;
+    min-height: 100vh;
+    color: white;
+
+    &__wrapper {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    &__title-h2 {
+        display: inline-block;
+        position: relative;
+        margin-left: 10%;
+        padding-top: 80px;
+        color: #9da19d;
+        font-family: 'Ubuntu';
+        font-size: 50px;
+
+        span {
+            display: block;
+            position: absolute;
+            background-color: #ff3d4f;
+            width: 80px;
+            height: 7px;
+            right: -1%;
+            border-radius: 10px;
+        }
+    }
+}

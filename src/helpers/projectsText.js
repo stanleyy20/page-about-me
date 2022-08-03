@@ -49,4 +49,9 @@ export const PROJECTS = {
         ICON: 'fa-solid fa-language',
         URL: 'https://github.com/stanleyy20/translator-react',
     },
+    GIT_HUB: {
+        TITLE: 'GitHub',
+        ICON: 'fa fa-github',
+        URL: 'https://github.com/stanleyy20',
+    },
 };

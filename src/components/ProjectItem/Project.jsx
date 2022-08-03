@@ -8,7 +8,7 @@ export const Project = ({ Url, Icon, Title }) => {
     return (
         <>
             <div className={style()}>
-                <a className={style('link')} href={Url}>
+                <a className={style('link')} href={Url} target='_blank' rel='noopener noreferrer'>
                     Link
                 </a>
                 <div className={style('img')}>

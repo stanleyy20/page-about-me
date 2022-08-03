@@ -1,12 +1,12 @@
 import React, { Fragment, useState } from 'react';
 
-import AboutMe from '../AboutMe/AboutMe';
 import Contact from '../Contact/Contact';
 import FollowMe from '../FollowMe/FollowMe';
 import Header from '../Header/Header';
 import MobileMenu from '../MobileMenu/MobileMenu';
 import MyProjects from '../MyProjects/MyProjects';
 import ScrollTopButton from '../ScrollTopButton/ScrollTopButton';
+import AboutMe from '../About/About';
 
 // import scrollreveal from 'scrollreveal';
 
@@ -32,6 +32,7 @@ const MainPage = () => {
             <FollowMe />
             <Header isVisible={isVisible} setIsVisible={setIsVisible} />
             <AboutMe />
+            {/* <AboutMe /> */}
             <MyProjects />
             <Contact />
             <ScrollTopButton />
