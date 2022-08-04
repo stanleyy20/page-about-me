@@ -5,7 +5,7 @@ import bemCssModules from 'bem-css-modules';
 import { default as ProjectStyle } from './MyProjects.module.scss';
 import { Project } from '../ProjectItem/Project';
 
-import { PROJECTS } from '../../helpers/projectsText';
+import { PROJECTS } from '../../helpers/projectsData';
 
 const {
     CALCULATOR,

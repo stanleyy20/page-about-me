@@ -1,0 +1,15 @@
+export const knownTechnologies = [
+    'JavaScript',
+    'React',
+    'Git',
+    'Sass',
+    'NPM',
+    'VS Code',
+    'axios',
+    'HTML',
+    'CSS',
+    'Docker',
+    'styled-components',
+    'BEM',
+    'REST API',
+];

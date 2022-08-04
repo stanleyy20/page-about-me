@@ -5,11 +5,11 @@ import bemCssModules from 'bem-css-modules';
 import SkillsModule from './Skills.module.scss';
 
 import Skill from './Skill/Skill';
-import { SKILLS } from '../../../../helpers/skillsText';
+import { SKILLS } from '../../../../helpers/skillsData';
 
 const style = bemCssModules(SkillsModule);
 
-const { CSS, GIT, HTML, JAVA_SCRIPT, REACT, SASS, BOOTSTRAP } = SKILLS;
+const { CSS, GIT, HTML, JAVA_SCRIPT, REACT, SASS } = SKILLS;
 
 const Skills = () => {
     return (
