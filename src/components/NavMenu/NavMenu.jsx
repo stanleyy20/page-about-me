@@ -31,6 +31,8 @@ const NavMenu = ({ isVisibleMenu, setIsVisibleMenu }) => {
         setIsVisibleMenu(!isVisibleMenu);
     };
 
+    console.log('nav menu i mobile menu też można przerobić');
+
     return (
         <nav className={style({ barmenu: !isVisible })}>
             <p className={style('logo')}>

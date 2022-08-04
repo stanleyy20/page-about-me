@@ -7,6 +7,8 @@ import { default as ContactStyle } from './Contact.module.scss';
 const style = bemCssModules(ContactStyle);
 
 const Contact = () => {
+    console.log('Przerobić Contact na  mniejsze komponenty');
+
     return (
         <>
             <section className={style()} id='contact'>

@@ -7,7 +7,7 @@ import bemCssModules from 'bem-css-modules';
 
 // import TitlePage from './components/TitlePage/TitlePage';
 
-import './App.module.scss';
+import './App.scss';
 import './variables.scss';
 import MainPage from './components/MainPage/MainPage';
 
