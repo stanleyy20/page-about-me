@@ -1,6 +1,32 @@
 .timeline {
     flex-basis: 100%;
-    height: 10vh;
+    height: 15vh;
     border: #303133 solid 2px;
     border-radius: 4px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &__container {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__item {
+        background-color: #303133;
+        height: 80%;
+        border-radius: 4px;
+        flex-basis: 20%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 5px;
+    }
 }
