@@ -12,7 +12,7 @@ const Description = () => {
     return (
         <div className={style()}>
             <h3>{DESCRIPTION_TITLE}</h3>
-            <div className={style('text')}>
+            <div>
                 {DESCRIPTION_ONE}
                 <br />
                 <br />

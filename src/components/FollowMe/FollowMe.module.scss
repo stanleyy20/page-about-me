@@ -1,32 +1,32 @@
 .wrapper {
-  display: flex;
-  position: fixed;
-  width: 200px;
-  top: 50%;
-  left: -1%;
-  transform: rotate(-90deg);
-  color: white;
-  letter-spacing: 2px;
-  justify-content: space-between;
-  z-index: 9999;
-  transition: 2s;
-
-  @media (max-width: 1224px) {
-    display: none;
-  }
-
-  a {
-    text-decoration: none;
+    display: flex;
+    position: fixed;
+    width: 200px;
+    top: 50%;
+    left: -1%;
+    transform: rotate(-90deg);
     color: white;
-  }
+    letter-spacing: 2px;
+    justify-content: space-between;
+    z-index: 9999;
+    transition: 2s;
 
-  i {
-    transform: rotate(90deg);
-    cursor: pointer;
-
-    &:hover {
-      transform: scale(130%) rotate(90deg);
-      color: #ff3d4f;
+    @media (max-width: 1224px) {
+        display: none;
     }
-  }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    i {
+        transform: rotate(90deg);
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(130%) rotate(90deg);
+            color: #ff3d4f;
+        }
+    }
 }
