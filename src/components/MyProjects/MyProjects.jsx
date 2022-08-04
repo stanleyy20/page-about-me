@@ -48,7 +48,7 @@ const MyProjects = () => {
                     <a href={GIT_HUB.URL} target='_blank' rel='noopener noreferrer'>
                         {GIT_HUB.TITLE}
                     </a>{' '}
-                    <i class={GIT_HUB.ICON}></i>
+                    <i className={GIT_HUB.ICON}></i>
                 </span>
             </p>
         </section>

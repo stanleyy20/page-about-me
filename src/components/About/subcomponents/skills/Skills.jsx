@@ -9,7 +9,7 @@ import { SKILLS } from '../../../../helpers/skillsData';
 
 const style = bemCssModules(SkillsModule);
 
-const { CSS, GIT, HTML, JAVA_SCRIPT, REACT, SASS, TYPE_SCRIPT } = SKILLS;
+const { CSS, HTML, JAVA_SCRIPT, REACT, SASS, TYPE_SCRIPT } = SKILLS;
 
 const Skills = () => {
     return (

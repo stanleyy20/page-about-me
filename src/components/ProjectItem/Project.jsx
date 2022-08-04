@@ -12,7 +12,7 @@ export const Project = ({ Url, Icon, Title }) => {
                     Link
                 </a>
                 <div className={style('img')}>
-                    <i class={Icon}></i>
+                    <i className={Icon}></i>
                 </div>
                 <h3 className={style('title-h3')}>{Title}</h3>
             </div>

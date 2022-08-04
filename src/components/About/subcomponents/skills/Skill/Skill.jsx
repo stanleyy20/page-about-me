@@ -8,11 +8,11 @@ const Skills = ({ title, icon }) => {
     const iconContent =
         icon === 'type-script' ? (
             <span
-                class='iconify'
+                className='iconify'
                 data-icon='simple-icons:typescript'
                 style={{ color: '#ff3d4f', marginLeft: '10px' }}></span>
         ) : (
-            <i class={icon}></i>
+            <i className={icon}></i>
         );
 
     return (
