@@ -1,5 +1,4 @@
-$hoverBreak: 1450px;
-$hoverBreakMobile: 600px;
+@import '../../../../variables.scss';
 
 .skills {
     display: flex;
@@ -24,5 +23,9 @@ $hoverBreakMobile: 600px;
         display: flex;
         flex-direction: column;
         gap: 12px;
+    }
+
+    h3 {
+        font-size: 25px;
     }
 }

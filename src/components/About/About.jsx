@@ -1,11 +1,10 @@
 import React from 'react';
 
 import bemCssModules from 'bem-css-modules';
-
 import { default as AboutMeStyle } from './About.module.scss';
+
 import Skills from './subcomponents/skills/Skills';
 import ImgSection from './subcomponents/ImgSection/ImgSection';
-
 import Tech from './subcomponents/Tech/Tech';
 import Timeline from './subcomponents/Timeline/Timeline';
 import Description from './subcomponents/Description/Description';

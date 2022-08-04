@@ -1,5 +1,4 @@
-$hoverBreak: 1200px;
-$hoverBreakMobile: 600px;
+@import '../../../../../variables.scss';
 
 .skill {
     display: flex;
@@ -17,7 +16,7 @@ $hoverBreakMobile: 600px;
 
     p {
         font-family: 'Ubuntu';
-        font-size: 25px;
+        font-size: 20px;
         margin-top: 10px;
         margin-bottom: 10px;
 

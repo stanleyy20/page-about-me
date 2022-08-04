@@ -1,310 +1,308 @@
-$hoverBreak: 1200px;
-$hoverBreakMobile: 600px;
+@import '../../variables.scss';
 
 .contact {
-  min-height: 90vh;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 4%;
-
-  @media (max-width: $hoverBreakMobile) {
+    min-height: 90vh;
     width: 80%;
-    padding-top: 12%;
-  }
-
-  &__title-h2 {
-    display: inline-block;
-    position: relative;
-    padding-top: 30px;
-    color: #9da19d;
-    font-family: 'Ubuntu';
-    font-size: 50px;
-
-    span {
-      display: block;
-      position: absolute;
-      background-color: #ff3d4f;
-      width: 80px;
-      height: 7px;
-      right: -1%;
-      border-radius: 10px;
-    }
-  }
-
-  &__wrapper {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 30px;
-    width: 100%;
-
-    @media (max-width: $hoverBreak) {
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 4%;
 
     @media (max-width: $hoverBreakMobile) {
-      width: 100%;
-    }
-  }
-
-  &__form {
-    flex-basis: 55%;
-
-    @media (max-width: $hoverBreak) {
-      flex-basis: 80%;
+        width: 80%;
+        padding-top: 12%;
     }
 
-    @media (max-width: $hoverBreakMobile) {
-      flex-basis: 100%;
-    }
-  }
+    &__title-h2 {
+        display: inline-block;
+        position: relative;
+        padding-top: 30px;
+        color: #9da19d;
+        font-family: 'Ubuntu';
+        font-size: 50px;
 
-  &__text-container {
-    margin-bottom: 5%;
-    color: #9da19d;
-
-    @media (max-width: $hoverBreakMobile) {
-      margin-top: 30px;
-    }
-
-    p {
-      font-family: 'Ubuntu';
-      font-size: 20px;
-    }
-  }
-
-  &__title-h3 {
-    color: white;
-    margin-bottom: 20px;
-    font-size: 40px;
-    font-family: 'Ubuntu';
-
-    @media (max-width: $hoverBreak) {
-      margin-top: 25px;
+        span {
+            display: block;
+            position: absolute;
+            background-color: #ff3d4f;
+            width: 80px;
+            height: 7px;
+            right: -1%;
+            border-radius: 10px;
+        }
     }
 
-    @media (max-width: $hoverBreakMobile) {
-      font-size: 30px;
-    }
-  }
-
-  &__wrapper-input{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-
-    @media (max-width: $hoverBreakMobile) {
-      flex-wrap: wrap;
-    }
-  }
-
-  
-  &__input {
-    width: 30%;
-    background-color: transparent;
-    margin-bottom: 30px;
-    border: #303133 solid 2px;
-    font-size: large;
-    color: #9da19d;
-    padding: 10px;
-
-    &::-webkit-outer-spin-button,
-    &::-webkit-inner-spin-button {
-      -webkit-appearance: none;
-      margin: 0;
-    }
-
-    // @media (max-width: $hoverBreak) {
-    //   margin-right: 10px;
-    //   width: calc((100% / 3) - 9px);
-    // }
-
-    @media (max-width: $hoverBreakMobile) {
-      flex-wrap: wrap;
-      width: 100%;
-      margin-bottom: 10px;
-    }
-
-    &--last {
-      margin-right: 0;
-    }
-
-    &--button {
-      position: relative;
-      width: 50%;
-      background-color: #222222;
-      color: white;
-      transition: 1s;
-
-      @media (max-width: $hoverBreakMobile) {
+    &__wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 30px;
         width: 100%;
+
+        @media (max-width: $hoverBreak) {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        @media (max-width: $hoverBreakMobile) {
+            width: 100%;
+        }
+    }
+
+    &__form {
+        flex-basis: 55%;
+
+        @media (max-width: $hoverBreak) {
+            flex-basis: 80%;
+        }
+
+        @media (max-width: $hoverBreakMobile) {
+            flex-basis: 100%;
+        }
+    }
+
+    &__text-container {
+        margin-bottom: 5%;
+        color: #9da19d;
+
+        @media (max-width: $hoverBreakMobile) {
+            margin-top: 30px;
+        }
+
+        p {
+            font-family: 'Ubuntu';
+            font-size: 20px;
+        }
+    }
+
+    &__title-h3 {
+        color: white;
+        margin-bottom: 20px;
+        font-size: 40px;
+        font-family: 'Ubuntu';
+
+        @media (max-width: $hoverBreak) {
+            margin-top: 25px;
+        }
+
+        @media (max-width: $hoverBreakMobile) {
+            font-size: 30px;
+        }
+    }
+
+    &__wrapper-input {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        @media (max-width: $hoverBreakMobile) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__input {
+        width: 30%;
+        background-color: transparent;
+        margin-bottom: 30px;
+        border: #303133 solid 2px;
+        font-size: large;
+        color: #9da19d;
+        padding: 10px;
+
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        // @media (max-width: $hoverBreak) {
+        //   margin-right: 10px;
+        //   width: calc((100% / 3) - 9px);
+        // }
+
+        @media (max-width: $hoverBreakMobile) {
+            flex-wrap: wrap;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        &--last {
+            margin-right: 0;
+        }
+
+        &--button {
+            position: relative;
+            width: 50%;
+            background-color: #222222;
+            color: white;
+            transition: 1s;
+
+            @media (max-width: $hoverBreakMobile) {
+                width: 100%;
+                &:active {
+                    background-color: #ff3d4f;
+                }
+            }
+
+            @media (min-width: $hoverBreakMobile) {
+                &:hover {
+                    background-color: #ff3d4f;
+                }
+            }
+        }
+
+        &:focus {
+            outline: 0;
+            border: #ff3d4f 2px solid;
+        }
+
+        &::placeholder {
+            text-align: center;
+            font-size: 18px;
+            font-family: 'Ubuntu';
+        }
+    }
+    &__textarea {
+        background-color: transparent;
+        display: block;
+        margin-bottom: 30px;
+        margin-right: 0px;
+        border: #303133 solid 2px;
+        width: 100%;
+        height: 25vh;
+        resize: none;
+        padding: 10px;
+        color: #9da19d;
+        font-size: 20px;
+
+        &::placeholder {
+            text-align: center;
+            font-size: 18px;
+            font-family: 'Ubuntu';
+        }
+
+        &:focus {
+            outline: 0;
+            border: #ff3d4f 2px solid;
+        }
+
+        @media (max-width: $hoverBreakMobile) {
+            height: 25%;
+        }
+    }
+
+    &__info {
+        position: relative;
+        flex-basis: 25%;
+        height: 450px;
+        border: #303133 solid 2px;
+        color: #9da19d;
+        text-align: center;
+        margin-top: 60px;
+
+        @media (max-width: $hoverBreak) {
+            flex-basis: 80%;
+        }
+
+        @media (max-width: $hoverBreakMobile) {
+            flex-basis: 100%;
+            height: 400px;
+        }
+    }
+
+    &__container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        p {
+            font-family: 'Ubuntu';
+            font-size: 18px;
+
+            @media (max-width: $hoverBreak) {
+                font-size: 23px;
+            }
+
+            @media (max-width: $hoverBreakMobile) {
+                font-size: 18px;
+            }
+        }
+
+        h4 {
+            font-size: 20px;
+            padding: 20px 0;
+            font-family: 'Ubuntu';
+            color: white;
+
+            @media (max-width: $hoverBreak) {
+                font-size: 28px;
+            }
+
+            @media (max-width: $hoverBreakMobile) {
+                font-size: 22px;
+            }
+        }
+    }
+
+    &__footer {
+        position: relative;
+        width: 100%;
+        height: 10vh;
+        border-top: #303133 solid 2px;
+        background-color: #1d1e20;
+        color: #9da19d;
+        font-size: large;
+        font-family: 'Ubuntu';
+    }
+
+    &__text-footer {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__social {
+        margin: 15px auto;
+        width: 22%;
+        display: flex;
+        justify-content: space-around;
+
+        @media (max-width: $hoverBreak) {
+            width: 50%;
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: $hoverBreakMobile) {
+            width: 100%;
+        }
+    }
+
+    &__social-btn {
+        display: flex;
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+        background-color: #222222;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        transition: 1s;
+
         &:active {
-          background-color: #ff3d4f;
+            background-color: #ff3d4f;
         }
-      }
 
-      @media (min-width: $hoverBreakMobile) {
-        &:hover {
-          background-color: #ff3d4f;
+        @media (min-width: $hoverBreak) {
+            &:hover {
+                background-color: #ff3d4f;
+            }
         }
-      }
+
+        @media (max-width: $hoverBreak) {
+            width: 50px;
+            height: 50px;
+        }
     }
-
-    &:focus {
-      outline: 0;
-      border: #ff3d4f 2px solid;
-    }
-
-    &::placeholder {
-      text-align: center;
-      font-size: 18px;
-      font-family: 'Ubuntu';
-    }
-  }
-  &__textarea {
-    background-color: transparent;
-    display: block;
-    margin-bottom: 30px;
-    margin-right: 0px;
-    border: #303133 solid 2px;
-    width: 100%;
-    height: 25vh;
-    resize: none;
-    padding: 10px;
-    color: #9da19d;
-    font-size: 20px;
-
-    &::placeholder {
-      text-align: center;
-      font-size: 18px;
-      font-family: 'Ubuntu';
-    }
-
-    &:focus {
-      outline: 0;
-      border: #ff3d4f 2px solid;
-    }
-
-    @media (max-width: $hoverBreakMobile) {
-      height: 25%;
-    }
-  }
-
-  &__info {
-    position: relative;
-    flex-basis: 25%;
-    height: 450px;
-    border: #303133 solid 2px;
-    color: #9da19d;
-    text-align: center;
-    margin-top: 60px;
-
-    @media (max-width: $hoverBreak) {
-      flex-basis: 80%;
-    }
-
-    @media (max-width: $hoverBreakMobile) {
-      flex-basis: 100%;
-      height: 400px;
-    }
-  }
-
-  &__container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    p {
-      font-family: 'Ubuntu';
-      font-size: 18px;
-
-      @media (max-width: $hoverBreak) {
-        font-size: 23px;
-      }
-
-      @media (max-width: $hoverBreakMobile) {
-        font-size: 18px;
-      }
-    }
-
-    h4 {
-      font-size: 20px;
-      padding: 20px 0;
-      font-family: 'Ubuntu';
-      color: white;
-
-      @media (max-width: $hoverBreak) {
-        font-size: 28px;
-      }
-
-      @media (max-width: $hoverBreakMobile) {
-        font-size: 22px;
-      }
-    }
-  }
-
-  &__footer {
-    position: relative;
-    width: 100%;
-    height: 10vh;
-    border-top: #303133 solid 2px;
-    background-color: #1d1e20;
-    color: #9da19d;
-    font-size: large;
-    font-family: 'Ubuntu';
-  }
-
-  &__text-footer {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  &__social {
-    margin: 15px auto;
-    width: 22%;
-    display: flex;
-    justify-content: space-around;
-
-    @media (max-width: $hoverBreak) {
-      width: 50%;
-      margin-bottom: 30px;
-    }
-
-    @media (max-width: $hoverBreakMobile) {
-      width: 100%;
-    }
-  }
-
-  &__social-btn {
-    display: flex;
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    width: 40px;
-    height: 40px;
-    background-color: #222222;
-    border-radius: 5px;
-    justify-content: center;
-    align-items: center;
-    transition: 1s;
-
-    &:active {
-      background-color: #ff3d4f;
-    }
-
-    @media (min-width: $hoverBreak) {
-      &:hover {
-        background-color: #ff3d4f;
-      }
-    }
-
-    @media (max-width: $hoverBreak) {
-      width: 50px;
-      height: 50px;
-    }
-  }
 }

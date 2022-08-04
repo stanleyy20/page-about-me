@@ -1,97 +1,96 @@
-$hoverBreak: 1200px;
-$hoverBreakMobile: 600px;
+@import '../../variables.scss';
 
 .menu {
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-
-  &--barmenu {
-    background-color: #1d1e20;
-    position: fixed;
-    right: 0;
-    width: 100%;
-    z-index: 99999999;
-    padding-bottom: 20px;
-    border-bottom: #303133 solid 2px;
-  }
-
-  &__logo {
-    position: absolute;
-    left: 11%;
-    top: 50%;
-    transform: translateY(-50%);
-    font-family: 'Ubuntu';
-    color: white;
-    font-weight: 700;
-    font-size: 18px;
-
-    @media (max-width: $hoverBreak) {
-      display: none;
-    }
-
-    span {
-      color: #ff3d4f;
-    }
-  }
-
-  &__list {
+    position: relative;
     display: flex;
-    flex-direction: row;
-    list-style: none;
-    margin-top: 15px;
-    width: 50%;
-    justify-content: space-around;
+    justify-content: flex-end;
 
-    @media (max-width: $hoverBreak) {
-      width: 100%;
+    &--barmenu {
+        background-color: #1d1e20;
+        position: fixed;
+        right: 0;
+        width: 100%;
+        z-index: 99999999;
+        padding-bottom: 20px;
+        border-bottom: #303133 solid 2px;
     }
 
-    @media (max-width: $hoverBreakMobile) {
-      display: none;
-    }
-  }
+    &__logo {
+        position: absolute;
+        left: 11%;
+        top: 50%;
+        transform: translateY(-50%);
+        font-family: 'Ubuntu';
+        color: white;
+        font-weight: 700;
+        font-size: 18px;
 
-  &__bars-mobile {
-    z-index: 99999999;
-    @media (min-width: $hoverBreakMobile) {
-      display: none;
-    }
-    i {
-      color: white;
-      font-size: 40px;
-      padding-right: 20px;
-      padding-top: 20px;
-
-      &:active {
-        &:active {
-          color: #ff3d4f;
+        @media (max-width: $hoverBreak) {
+            display: none;
         }
-      }
-    }
-  }
 
-  &__link {
-    font-family: 'Ubuntu';
-    color: #9da19d;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 30px;
-    transition: 0.8s;
-
-    &:hover {
-      color: #ff3d4f;
+        span {
+            color: #ff3d4f;
+        }
     }
 
-    @media (max-width: $hoverBreak) {
-      transition: 0s;
+    &__list {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        margin-top: 15px;
+        width: 50%;
+        justify-content: space-around;
 
-      &:hover {
+        @media (max-width: $hoverBreak) {
+            width: 100%;
+        }
+
+        @media (max-width: $hoverBreakMobile) {
+            display: none;
+        }
+    }
+
+    &__bars-mobile {
+        z-index: 99999999;
+        @media (min-width: $hoverBreakMobile) {
+            display: none;
+        }
+        i {
+            color: white;
+            font-size: 40px;
+            padding-right: 20px;
+            padding-top: 20px;
+
+            &:active {
+                &:active {
+                    color: #ff3d4f;
+                }
+            }
+        }
+    }
+
+    &__link {
+        font-family: 'Ubuntu';
         color: #9da19d;
-      }
-      &:active {
-        color: #ff3d4f;
-      }
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 30px;
+        transition: 0.8s;
+
+        &:hover {
+            color: #ff3d4f;
+        }
+
+        @media (max-width: $hoverBreak) {
+            transition: 0s;
+
+            &:hover {
+                color: #9da19d;
+            }
+            &:active {
+                color: #ff3d4f;
+            }
+        }
     }
-  }
 }

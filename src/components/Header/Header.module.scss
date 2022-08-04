@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Oswald:wght@700&family=Ubuntu&display=swap');
-$hoverBreak: 1200px;
-$hoverBreakMobile: 600px;
+@import '../../variables.scss';
 
 .header {
     position: relative;

@@ -56,7 +56,7 @@
     }
 
     &__img-container {
-        min-width: 40%;
+        width: 40%;
         padding: 15px;
         margin: 20px;
         border-radius: 4px;
@@ -66,23 +66,27 @@
         align-items: center;
         background-color: #303133d9;
 
-        @media (max-width: 800px) {
+        @media (max-width: $medium) {
+            min-width: 50%;
             gap: 20px;
+        }
+
+        @media (max-width: $small) {
+            min-width: 90%;
         }
     }
 
     &__text-container {
-        width: 100%;
         order: 2;
 
-        @media (max-width: 800px) {
+        @media (max-width: $small) {
             line-height: 20px;
             font-size: 15px;
         }
     }
 
     &__img {
-        width: 40%;
+        width: 30%;
         height: 100%;
         background-color: #303133;
         background-image: url('../../../../../public/me.jpg');
@@ -92,7 +96,7 @@
         border-radius: 4px;
 
         @media (max-width: 800px) {
-            width: 70%;
+            width: 50%;
         }
     }
 
