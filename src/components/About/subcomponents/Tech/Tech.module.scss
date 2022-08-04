@@ -1,16 +1,36 @@
+$hoverBreak: 1450px;
+$hoverBreakMobile: 600px;
+
+$primary-red: #ff3d4f;
+
 .tech {
     flex-basis: 30%;
     height: 50vh;
     border: #303133 solid 2px;
     border-radius: 4px;
-    color: #ff3d4f;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
+    @media (max-width: $hoverBreakMobile) {
+        font-size: 15px;
+    }
+
+    @media (max-width: 1400px) {
+        flex-basis: 45%;
+    }
+
+    @media (max-width: 800px) {
+        flex-basis: 100%;
+    }
+
     h3 {
         color: white;
+    }
+    &__tag-continer {
+        width: 300px;
+        height: 300px;
     }
 }

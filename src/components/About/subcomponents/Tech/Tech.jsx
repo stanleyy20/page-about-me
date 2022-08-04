@@ -10,7 +10,9 @@ const Tech = () => {
     return (
         <div className={style()}>
             <h3>Known Technologies</h3>
-            <TagCloud />
+            <div className={style('tag-continer')}>
+                <TagCloud />
+            </div>
         </div>
     );
 };

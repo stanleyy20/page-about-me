@@ -16,7 +16,7 @@ const AnimationTech = () => {
                 initSpeed: 'slow',
                 keep: false,
                 containerClass: 'tag-width',
-                radius: '190',
+                radius: '160',
                 direction: Math.floor(Math.random() * 720 - 360),
             });
             return () => {

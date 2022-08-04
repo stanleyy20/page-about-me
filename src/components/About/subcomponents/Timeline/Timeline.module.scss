@@ -9,12 +9,26 @@
     flex-direction: column;
     gap: 10px;
 
+    @media (max-width: 1400px) {
+        flex-basis: 45%;
+        height: 50vh;
+    }
+
+    @media (max-width: 800px) {
+        flex-basis: 100%;
+        height: 50vh;
+    }
+
     &__container {
         display: flex;
         width: 100%;
         height: 100%;
         justify-content: space-around;
         align-items: center;
+
+        @media (max-width: 1400px) {
+            flex-direction: column;
+        }
     }
 
     &__item {
@@ -28,5 +42,9 @@
         align-items: center;
         flex-direction: column;
         gap: 5px;
+
+        @media (max-width: 1400px) {
+            width: 80%;
+        }
     }
 }
