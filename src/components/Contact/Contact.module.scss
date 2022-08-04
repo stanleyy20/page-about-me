@@ -101,7 +101,7 @@
 
     &__input {
         width: 30%;
-        background-color: transparent;
+        background-color: $btn-color;
         margin-bottom: 30px;
         border: #303133 solid 2px;
         font-size: large;
@@ -162,7 +162,7 @@
         }
     }
     &__textarea {
-        background-color: transparent;
+        background-color: $btn-color;
         display: block;
         margin-bottom: 30px;
         margin-right: 0px;
@@ -198,6 +198,7 @@
         color: #9da19d;
         text-align: center;
         margin-top: 60px;
+        background-color: $btn-color;
 
         @media (max-width: $hoverBreak) {
             flex-basis: 80%;

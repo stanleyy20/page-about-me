@@ -9,6 +9,7 @@
     border-radius: 4px;
     justify-content: space-around;
     align-items: center;
+    background-color: $btn-color;
 
     @media (max-width: 1400px) {
         flex-basis: 45%;

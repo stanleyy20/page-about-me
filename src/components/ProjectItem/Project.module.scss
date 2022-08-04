@@ -10,7 +10,7 @@
     transition: 1s;
     border-radius: 4px;
     transition: 1s;
-    background-color: transparent;
+    background-color: $btn-color;
     border: #303133 solid 2px;
 
     @media (max-width: $hoverBreak) {

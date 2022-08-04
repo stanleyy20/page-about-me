@@ -6,6 +6,7 @@
     height: 20vh;
     border-radius: 4px;
     border: #303133 solid 2px;
+    background-color: $btn-color;
 
     position: relative;
     overflow: hidden;
@@ -27,7 +28,7 @@
         left: 50%;
         min-width: 315vw;
         min-height: 300vw;
-        background-color: #ff3d4f;
+        background-color: $main-red;
         animation-name: rotate;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
@@ -88,7 +89,6 @@
     &__img {
         width: 30%;
         height: 100%;
-        background-color: #303133;
         background-image: url('../../../../../public/me.jpg');
         background-repeat: no-repeat;
         background-position: center;
