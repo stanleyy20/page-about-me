@@ -5,6 +5,7 @@
     border-radius: 4px;
     padding: 20px;
     text-align: left;
+    line-height: 25px;
 
     display: flex;
     flex-direction: column;
@@ -13,13 +14,19 @@
 
     @media (max-width: 1400px) {
         flex-basis: 45%;
+        line-height: 22px;
     }
 
     @media (max-width: 800px) {
         flex-basis: 100%;
+        line-height: 18px;
     }
 
     h3 {
         font-size: 26px;
+        @media (max-width: 800px) {
+            line-height: 28px;
+            font-size: 24px;
+        }
     }
 }
