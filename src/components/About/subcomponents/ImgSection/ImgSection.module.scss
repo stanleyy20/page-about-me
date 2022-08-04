@@ -1,3 +1,5 @@
+@import '../../../../variables.scss';
+
 .img-section {
     display: flex;
     flex-basis: 100%;
@@ -62,7 +64,11 @@
         justify-content: left;
         gap: 50px;
         align-items: center;
-        background-color: #303133;
+        background-color: #303133d9;
+
+        @media (max-width: 800px) {
+            gap: 20px;
+        }
     }
 
     &__text-container {
@@ -70,8 +76,8 @@
         order: 2;
 
         @media (max-width: 800px) {
-            line-height: 15px;
-            font-size: 13px;
+            line-height: 20px;
+            font-size: 15px;
         }
     }
 
@@ -88,6 +94,18 @@
         @media (max-width: 800px) {
             width: 70%;
         }
+    }
+
+    &__name {
+        font-size: 24px;
+    }
+
+    &__front {
+        color: #ff3d4f;
+    }
+
+    &__time {
+        color: $text-second;
     }
 }
 

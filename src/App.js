@@ -8,22 +8,23 @@ import bemCssModules from 'bem-css-modules';
 // import TitlePage from './components/TitlePage/TitlePage';
 
 import './App.module.scss';
+import './variables.scss';
 import MainPage from './components/MainPage/MainPage';
 
 bemCssModules.setSettings({
-  modifierDelimiter: '--',
+    modifierDelimiter: '--',
 });
 
 function App() {
-  return (
-    // <Router>
-    //   <Routes>
-    //     <Route path='/' element={<TitlePage />} />
-    //     <Route path='/main' element={<MainPage />} />
-    //   </Routes>
-    // </Router>
-    <MainPage />
-  );
+    return (
+        // <Router>
+        //   <Routes>
+        //     <Route path='/' element={<TitlePage />} />
+        //     <Route path='/main' element={<MainPage />} />
+        //   </Routes>
+        // </Router>
+        <MainPage />
+    );
 }
 
 export default App;

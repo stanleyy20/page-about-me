@@ -10,8 +10,8 @@ const style = bemCssModules(TimelineStyle);
 
 const timelineItem = START_LEARNING.map((item) => (
     <div className={style('item')}>
-        <p>{item.name}</p>
-        <p>{timeSince(item.date)}</p>
+        <p className={style('name')}>{item.name}</p>
+        <p className={style('date')}>{timeSince(item.date)}</p>
     </div>
 ));
 

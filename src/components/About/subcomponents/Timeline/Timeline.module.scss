@@ -1,3 +1,4 @@
+@import '../../../../variables.scss';
 .timeline {
     flex-basis: 100%;
     height: 15vh;
@@ -32,7 +33,7 @@
     }
 
     &__item {
-        background-color: #303133;
+        background-color: #3031333f;
         height: 80%;
         border-radius: 4px;
         flex-basis: 20%;
@@ -46,5 +47,13 @@
         @media (max-width: 1400px) {
             width: 80%;
         }
+    }
+
+    &__name {
+        color: $text-second;
+    }
+
+    &__date {
+        color: $text-second;
     }
 }

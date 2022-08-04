@@ -10,7 +10,7 @@ export const knownTechnologies = [
     'HTML',
     'CSS',
     'Docker',
-    'styled-components',
+    // 'styled-components',
     'BEM',
     'REST API',
 ];
