@@ -5,11 +5,21 @@ import { default as SkillStyle } from './Skill.module.scss';
 const style = bemCssModules(SkillStyle);
 
 const Skills = ({ title, icon }) => {
+    const iconContent =
+        icon === 'type-script' ? (
+            <span
+                class='iconify'
+                data-icon='simple-icons:typescript'
+                style={{ color: '#ff3d4f', marginLeft: '10px' }}></span>
+        ) : (
+            <i class={icon}></i>
+        );
+
     return (
         <div className={style()}>
             <p>
                 {title}
-                <i class={icon}></i>
+                {iconContent}
             </p>
         </div>
     );

@@ -26,7 +26,7 @@ export const SKILLS = {
     },
     TYPE_SCRIPT: {
         TITLE: 'TypeScript',
-        ICON: 'fa-brands fa-bootstrap',
+        ICON: 'type-script',
     },
     BOOTSTRAP: {
         TITLE: 'Bootstrap',

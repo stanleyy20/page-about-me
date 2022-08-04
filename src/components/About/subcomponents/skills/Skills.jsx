@@ -9,7 +9,7 @@ import { SKILLS } from '../../../../helpers/skillsData';
 
 const style = bemCssModules(SkillsModule);
 
-const { CSS, GIT, HTML, JAVA_SCRIPT, REACT, SASS } = SKILLS;
+const { CSS, GIT, HTML, JAVA_SCRIPT, REACT, SASS, TYPE_SCRIPT } = SKILLS;
 
 const Skills = () => {
     return (
@@ -17,11 +17,11 @@ const Skills = () => {
             <h3>Skills</h3>
             <div className={style('skills-wrapper')}>
                 <Skill title={JAVA_SCRIPT.TITLE} icon={JAVA_SCRIPT.ICON} />
+                <Skill title={TYPE_SCRIPT.TITLE} icon={TYPE_SCRIPT.ICON} />
                 <Skill title={REACT.TITLE} icon={REACT.ICON} />
                 <Skill title={CSS.TITLE} icon={CSS.ICON} />
                 <Skill title={SASS.TITLE} icon={SASS.ICON} />
                 <Skill title={HTML.TITLE} icon={HTML.ICON} />
-                <Skill title={GIT.TITLE} icon={GIT.ICON} />
             </div>
         </div>
     );

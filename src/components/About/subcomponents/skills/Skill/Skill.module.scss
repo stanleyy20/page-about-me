@@ -1,15 +1,10 @@
 @import '../../../../../variables.scss';
 
 .skill {
-    display: flex;
-    flex-direction: column;
     text-align: center;
-    align-items: center;
-    justify-content: center;
     color: white;
     border-radius: 4px;
-    background-color: transparent;
-    border: #303133 solid 2px;
+    background-color: $background-color;
 
     @media (max-width: $hoverBreakMobile) {
     }

@@ -11,7 +11,6 @@
     border-radius: 4px;
     transition: 1s;
     background-color: $btn-color;
-    border: #303133 solid 2px;
 
     @media (max-width: $hoverBreak) {
         flex-basis: 40%;
@@ -19,7 +18,7 @@
     }
 
     @media (max-width: $hoverBreakMobile) {
-        flex-basis: 80%;
+        flex-basis: 90%;
         height: 40vh;
     }
 
@@ -44,8 +43,7 @@
         transform: translateX(-50%);
         text-decoration: none;
         color: white;
-        background-color: #222222;
-        border: #303133 solid 2px;
+        background-color: $background-color;
         padding: 10px 25px;
         border-radius: 4px;
         font-family: 'Ubuntu';

@@ -9,7 +9,7 @@ import timeSince from '../../../../helpers/timelineData';
 const style = bemCssModules(TimelineStyle);
 
 const timelineItem = START_LEARNING.map((item) => (
-    <div className={style('item')}>
+    <div className={style('item')} key={item.name}>
         <p className={style('name')}>{item.name}</p>
         <p className={style('date')}>{timeSince(item.date)}</p>
     </div>
