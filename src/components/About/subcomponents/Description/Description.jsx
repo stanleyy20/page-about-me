@@ -14,7 +14,11 @@ const Description = () => {
             <h3>{DESCRIPTION_TITLE}</h3>
             <div className={style('text')}>
                 {DESCRIPTION_ONE}
+                <br />
+                <br />
                 {DESCRIPTION_TWO}
+                <br />
+                <br />
                 {DESCRIPTION_THREE}
             </div>
         </div>

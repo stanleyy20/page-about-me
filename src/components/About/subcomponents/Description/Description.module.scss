@@ -3,4 +3,11 @@
     height: 50vh;
     border: #303133 solid 2px;
     border-radius: 4px;
+    padding: 20px;
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-around;
 }

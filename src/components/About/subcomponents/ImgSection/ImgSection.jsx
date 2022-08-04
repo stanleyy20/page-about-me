@@ -7,6 +7,7 @@ const style = bemCssModules(ImgSectionStyle);
 const ImgSection = () => {
     return (
         <div className={style()}>
+            
             <div className={style('img-container')}>
                 <div className={style('text-container')}>
                     <h4>Dawid</h4>

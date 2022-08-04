@@ -1,5 +1,6 @@
 export const knownTechnologies = [
     'JavaScript',
+    'TypeScript',
     'React',
     'Git',
     'Sass',
