@@ -14,7 +14,7 @@ const styleList = bemCssModules(ProjectListStyle);
 
 const MyProjects = () => {
     const projectList = PROJECTS.map((project) => (
-        <div className={styleList()}>
+        <div key={project.TITLE} className={styleList()}>
             <a
                 className={styleList('link')}
                 href={project.URL}

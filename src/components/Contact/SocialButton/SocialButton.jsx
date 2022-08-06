@@ -8,7 +8,7 @@ const style = bemCssModules(ButtonStyle);
 
 export const SocialButton = () =>
     SOCIAL_BUTTON.map((button) => (
-        <a className={style()} href={button.LINK}>
+        <a key={button.ICON} className={style()} href={button.LINK}>
             {' '}
             <i className={button.ICON}></i>
         </a>

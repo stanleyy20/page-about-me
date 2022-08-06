@@ -1,11 +1,5 @@
 import React from 'react';
-
-// import { Route, Routes } from 'react-router-dom';
-// import { BrowserRouter as Router } from 'react-router-dom';
-
 import bemCssModules from 'bem-css-modules';
-
-// import TitlePage from './components/TitlePage/TitlePage';
 
 import './App.scss';
 import './variables.scss';
@@ -16,15 +10,7 @@ bemCssModules.setSettings({
 });
 
 function App() {
-    return (
-        // <Router>
-        //   <Routes>
-        //     <Route path='/' element={<TitlePage />} />
-        //     <Route path='/main' element={<MainPage />} />
-        //   </Routes>
-        // </Router>
-        <MainPage />
-    );
+    return <MainPage />;
 }
 
 export default App;

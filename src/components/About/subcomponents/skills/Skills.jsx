@@ -11,10 +11,16 @@ const Skills = () => {
     const iconStyle = { color: '#ff3d4f', marginLeft: '10px', fontSize: '22px' };
 
     const skillsContent = SKILLS.map((skill) => {
-        const icon = <span className='iconify' data-icon={skill.ICON} style={iconStyle}></span>;
+        const icon = (
+            <span
+                key={skill.ICON}
+                className='iconify'
+                data-icon={skill.ICON}
+                style={iconStyle}></span>
+        );
 
         return (
-            <div className={style('skill')}>
+            <div key={skill.TITLE} className={style('skill')}>
                 <p>
                     {skill.TITLE}
                     {icon}

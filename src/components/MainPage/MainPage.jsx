@@ -32,7 +32,6 @@ const MainPage = () => {
             <FollowMe />
             <Header isVisible={isVisible} setIsVisible={setIsVisible} />
             <AboutMe />
-            {/* <AboutMe /> */}
             <MyProjects />
             <Contact />
             <ScrollTopButton />
