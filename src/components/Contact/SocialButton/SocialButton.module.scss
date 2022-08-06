@@ -1,0 +1,30 @@
+@import '../../../variables.scss';
+
+.social-btn {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #222222;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+
+    &:active {
+        background-color: #ff3d4f;
+    }
+
+    @media (min-width: $hoverBreak) {
+        &:hover {
+            background-color: #ff3d4f;
+        }
+    }
+
+    @media (max-width: $hoverBreak) {
+        width: 50px;
+        height: 50px;
+    }
+}

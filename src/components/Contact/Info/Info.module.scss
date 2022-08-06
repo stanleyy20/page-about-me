@@ -1,0 +1,55 @@
+@import '../../../variables.scss';
+
+.info {
+    position: relative;
+    flex-basis: 25%;
+    height: 450px;
+
+    color: #9da19d;
+    text-align: center;
+    margin-top: 60px;
+    background-color: $btn-color;
+
+    @media (max-width: $hoverBreak) {
+        flex-basis: 80%;
+    }
+
+    @media (max-width: $hoverBreakMobile) {
+        flex-basis: 100%;
+        height: 400px;
+    }
+
+    &__container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        p {
+            font-family: 'Ubuntu';
+            font-size: 18px;
+
+            @media (max-width: $hoverBreak) {
+                font-size: 23px;
+            }
+
+            @media (max-width: $hoverBreakMobile) {
+                font-size: 18px;
+            }
+        }
+
+        h4 {
+            font-size: 20px;
+            padding: 20px 0;
+            font-family: 'Ubuntu';
+            color: white;
+
+            @media (max-width: $hoverBreak) {
+                font-size: 28px;
+            }
+
+            @media (max-width: $hoverBreakMobile) {
+                font-size: 22px;
+            }
+        }
+    }
+}

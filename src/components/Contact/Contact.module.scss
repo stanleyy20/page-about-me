@@ -99,54 +99,28 @@
         }
     }
 
-    &__input {
-        width: 30%;
+    &__button {
+        position: relative;
+        width: 50%;
+        transition: 1s;
         background-color: $btn-color;
         margin-bottom: 30px;
         border: #303133 solid 2px;
         font-size: large;
         color: #9da19d;
         padding: 10px;
-
-        &::-webkit-outer-spin-button,
-        &::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-        }
-
-        // @media (max-width: $hoverBreak) {
-        //   margin-right: 10px;
-        //   width: calc((100% / 3) - 9px);
-        // }
+        cursor: pointer;
 
         @media (max-width: $hoverBreakMobile) {
-            flex-wrap: wrap;
             width: 100%;
-            margin-bottom: 10px;
-        }
-
-        &--last {
-            margin-right: 0;
-        }
-
-        &--button {
-            position: relative;
-            width: 50%;
-            background-color: #222222;
-            color: white;
-            transition: 1s;
-
-            @media (max-width: $hoverBreakMobile) {
-                width: 100%;
-                &:active {
-                    background-color: #ff3d4f;
-                }
+            &:active {
+                background-color: #ff3d4f;
             }
+        }
 
-            @media (min-width: $hoverBreakMobile) {
-                &:hover {
-                    background-color: #ff3d4f;
-                }
+        @media (min-width: $hoverBreakMobile) {
+            &:hover {
+                background-color: #ff3d4f;
             }
         }
 
@@ -161,6 +135,7 @@
             font-family: 'Ubuntu';
         }
     }
+
     &__textarea {
         background-color: $btn-color;
         display: block;
@@ -264,7 +239,7 @@
 
     &__social {
         margin: 15px auto;
-        width: 22%;
+        width: 20%;
         display: flex;
         justify-content: space-around;
 
@@ -275,35 +250,6 @@
 
         @media (max-width: $hoverBreakMobile) {
             width: 100%;
-        }
-    }
-
-    &__social-btn {
-        display: flex;
-        text-decoration: none;
-        color: white;
-        font-size: 20px;
-        width: 40px;
-        height: 40px;
-        background-color: #222222;
-        border-radius: 5px;
-        justify-content: center;
-        align-items: center;
-        transition: 1s;
-
-        &:active {
-            background-color: #ff3d4f;
-        }
-
-        @media (min-width: $hoverBreak) {
-            &:hover {
-                background-color: #ff3d4f;
-            }
-        }
-
-        @media (max-width: $hoverBreak) {
-            width: 50px;
-            height: 50px;
         }
     }
 }
