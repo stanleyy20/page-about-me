@@ -4,25 +4,28 @@
     position: relative;
     margin-bottom: 35px;
     padding: 30px;
-    min-height: 30vh;
-    max-height: 40vh;
+    height: 30vh;
     flex-basis: 23%;
     transition: 1s;
     border-radius: 4px;
     transition: 1s;
     background-color: $btn-color;
 
-    @media (max-width: $hoverBreak) {
-        flex-basis: 40%;
-        min-height: 30vh;
-    }
-
-    @media (max-width: $hoverBreakMobile) {
+    @media (max-width: $small) {
         flex-basis: 90%;
-        height: 40vh;
+        height: 4vh;
+        display: flex;
+        height: 10vh;
+        padding: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+        gap: 5px;
     }
 
-    @media (max-width: 1919px) {
+    @media (min-width: 1919px) {
         min-height: 30vh;
     }
 
@@ -31,8 +34,9 @@
         text-align: center;
         margin-top: 20px;
 
-        @media (max-width: $hoverBreak) {
-            font-size: 20px;
+        @media (max-width: $small) {
+            font-size: 15px;
+            margin-top: 0;
         }
     }
 
@@ -62,6 +66,13 @@
         &:active {
             background-color: #ff3d4f;
         }
+
+        @media (max-width: $small) {
+            font-size: 15px;
+            position: static;
+            transform: translateX(0);
+            order: 2;
+        }
     }
 
     &__img {
@@ -69,6 +80,10 @@
 
         i {
             font-size: 100px;
+
+            @media (max-width: $small) {
+                font-size: 30px;
+            }
         }
     }
 }
