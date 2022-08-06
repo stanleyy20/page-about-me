@@ -13,7 +13,21 @@
     }
 
     @media (max-width: $hoverBreakMobile) {
-        flex-direction: column;
+        display: none;
+
+        &--visible {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin-top: 100px;
+            height: 65%;
+
+            color: #9da19d;
+
+            &:active {
+                color: #ff3d4f;
+            }
+        }
     }
 
     &__link {
@@ -52,10 +66,3 @@
         }
     }
 }
-
-// &__item {
-
-// }
-
-// &__link {
-// }

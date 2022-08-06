@@ -14,6 +14,5 @@ export const Link = ({ classNameModifier, onClick }) => (
                 </a>
             </li>
         ))}
-        ;
     </ul>
 );
