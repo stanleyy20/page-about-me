@@ -1,0 +1,61 @@
+@import '../../../variables.scss';
+
+.list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-top: 15px;
+    justify-content: space-around;
+    width: 50%;
+
+    @media (max-width: $hoverBreak) {
+        width: 100%;
+    }
+
+    @media (max-width: $hoverBreakMobile) {
+        flex-direction: column;
+    }
+
+    &__link {
+        font-family: 'Ubuntu';
+        color: #9da19d;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 30px;
+        transition: 0.8s;
+
+        &:hover {
+            color: #ff3d4f;
+        }
+
+        @media (max-width: $hoverBreak) {
+            transition: 0s;
+
+            &:hover {
+                color: #9da19d;
+            }
+            &:active {
+                color: #ff3d4f;
+            }
+        }
+
+        @media (max-width: $hoverBreakMobile) {
+            font-family: 'Ubuntu';
+            color: #9da19d;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 30px;
+
+            &:active {
+                color: #ff3d4f;
+            }
+        }
+    }
+}
+
+// &__item {
+
+// }
+
+// &__link {
+// }
