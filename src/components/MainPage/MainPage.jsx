@@ -3,7 +3,7 @@ import React, { Fragment, useState } from 'react';
 import Contact from '../Contact/Contact';
 import FollowMe from '../FollowMe/FollowMe';
 import Header from '../Header/Header';
-import MobileMenu from '../MobileMenu/MobileMenu';
+import MobileMenu from '../NavMenu/MobileMenu/MobileMenu';
 import MyProjects from '../MyProjects/MyProjects';
 import ScrollTopButton from '../ScrollTopButton/ScrollTopButton';
 import AboutMe from '../About/About';

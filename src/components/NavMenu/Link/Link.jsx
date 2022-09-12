@@ -8,7 +8,7 @@ const style = bemCssModules(LinkStyle);
 export const Link = ({ classNameModifier, onClick }) => (
     <ul className={style(classNameModifier)}>
         {LINKS.map((link) => (
-            <li className={'item'}>
+            <li className={'item'} key={link.TITLE}>
                 <a onClick={onClick} href={link.LINK} className={style('link')}>
                     {link.TITLE}
                 </a>
